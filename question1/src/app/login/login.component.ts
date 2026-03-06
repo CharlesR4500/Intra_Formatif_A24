@@ -27,14 +27,14 @@ import { MatCardModule } from '@angular/material/card';
 export class LoginComponent implements OnInit {
   users = USERS;
   selectedUser?: User;
+  
 
   constructor(public user: UserService, public route: Router) {}
 
-  ngOnInit() {}
+ ngOnInit() {  
+ }
 
-  login() {
-    console.log(this.selectedUser);
-
-    if (this.selectedUser) this.user.connect(this.selectedUser);
-  }
+login() {
+  if (this.selectedUser) this.user.connect(this.selectedUser);
+}
 }

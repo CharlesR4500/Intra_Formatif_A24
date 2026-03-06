@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router, RouterLink } from '@angular/router';
+import { Router, RouterLink, RouterModule } from '@angular/router';
 import { MatButtonModule } from '@angular/material/button';
 
 @Component({
@@ -7,7 +7,7 @@ import { MatButtonModule } from '@angular/material/button';
     templateUrl: './home.component.html',
     styleUrls: ['./home.component.css'],
     standalone: true,
-    imports: [MatButtonModule, RouterLink]
+    imports: [MatButtonModule, RouterLink, RouterModule]
 })
 export class HomeComponent {
 
